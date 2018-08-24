@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+
+{% extends "Application/basicapp.html" %}
+    {% block body_block %}
+        <h1>Welcome to Relative Url Templates</h1>
+        <a href="{% url 'Application:other' %}">Link to other page</a>
+        <a href="{% url 'admin:index' %}">Link to Admin</a>
+        <a href="{% url 'index' %}">Link to the index page</a>
+    {% endblock %}
